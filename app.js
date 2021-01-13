@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const Router = require('./routes');
 const {inTestEnv, SERVER_PORT}= require('./env');
-const { Module } = require('module');
+//const { Module } = require('module');
 
 const app = express();
 
