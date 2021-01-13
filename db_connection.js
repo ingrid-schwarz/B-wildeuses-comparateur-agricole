@@ -1,4 +1,4 @@
-requestAnimationFrame("dotenv").config();
+require("dotenv").config();
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
@@ -8,4 +8,4 @@ const connection = mysql.createConnection({
     database: process.env.DB_NAME
 });
 
-module.exports = connection
+module.exports = connection;
