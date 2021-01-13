@@ -5,7 +5,10 @@
   "main": "db_connection.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "create-db-migration": "db-migrate create $NAME --sql-file",
+    "migrate-db": "db-migrate-up"
+
   },
   "repository": {
     "type": "git",
