@@ -1,0 +1,30 @@
+{
+  "name": "B-wildeuses-comparateur-agricole",
+  "version": "1.0.0",
+  "description": "backend wildeuses",
+  "main": "db_connection.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingrid-schwarz/B-wildeuses-comparateur-agricole.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingrid-schwarz/B-wildeuses-comparateur-agricole/issues"
+  },
+  "homepage": "https://github.com/ingrid-schwarz/B-wildeuses-comparateur-agricole#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
+  }
+}
