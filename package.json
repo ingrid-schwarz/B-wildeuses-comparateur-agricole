@@ -1,14 +1,13 @@
 {
-  "name": "B-wildeuses-comparateur-agricole",
+  "name": "b-wildeuses-comparateur-agricole",
   "version": "1.0.0",
   "description": "backend wildeuses",
-  "main": "db_connection.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
     "create-db-migration": "db-migrate create $NAME --sql-file",
     "migrate-db": "db-migrate-up"
-
   },
   "repository": {
     "type": "git",
