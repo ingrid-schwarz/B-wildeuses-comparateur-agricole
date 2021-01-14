@@ -1,23 +1,24 @@
+require("dotenv").config();
 const express = require('express');
 const cors = require('cors');
-const Router = require('./routes');
-const {inTestEnv, SERVER_PORT}= require('./env');
-//const { Module } = require('module');
+const mainRoutes = require('./routes');
 
+
+
+//const { Module } = require('module');
+const SERVER_PORT=process.env.SERVER_PORT;
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-//api
-app.use('/api', Router);
+app.use('/api', mainRoutes);
+
+
 
 //server setup
-const server = app.listen(SERVER_PORT, ()=> {
-    if(!inTestEnv){
-        console.log(`server running on port ${SERVER_PORT}`);
-    }
-});
+app.listen(SERVER_PORT, ()=> {
+    console.log(`server running on port ${SERVER_PORT}`);
 
-module.exports = server;
+});
