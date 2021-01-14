@@ -5,7 +5,10 @@
   "main": "db_connection.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "create-db-migration": "db-migrate create $NAME --sql-file",
+    "migrate-db": "db-migrate-up"
+
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "db-migrate": "^0.11.12",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
