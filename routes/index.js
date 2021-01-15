@@ -7,6 +7,7 @@ const produitsRoutes = require('./produits.routes');
 const transactionsRoutes = require('./transactions.routes');
 
 
+
 router.use('/acheteurs', acheteursRoutes);
 router.use('/agriculteurs', agriculteursRoutes);
 router.use('/cities', citiesRoutes);
