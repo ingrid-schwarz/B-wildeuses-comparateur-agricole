@@ -6,8 +6,6 @@ const SERVER_PORT = process.env.SERVER_PORT;
 //const { Module } = require('module');
 
 
-//const { Module } = require('module');
-const SERVER_PORT=process.env.SERVER_PORT;
 const app = express();
 
 app.use(cors());

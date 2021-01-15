@@ -2,7 +2,7 @@ const router = require("express").Router();
 const connection = require("../db_connection");
 
 router.get("/", (req, res) => {
-  const sql = "SELECT a.farm_size, c.zipcode, c.city, c.lat, c.longitude FROM agriculteurs AS a JOIN cities AS c ON c.id=a.city_id";
+  const sql = "SELECT a.farm_size, c.zipcode, c.city, c.lat, c.longitude FROM agriculteurs AS a JOIN cities AS c ON c.id=a.city_id WHERE c.zipcode LIKE '28%'";
   connection.query(sql, (err, result) => {
     if (err) {
       res.status(500).json({ errorMessage: err.message });
